@@ -5,7 +5,7 @@ import { helper } from '@ember/component/helper';
  *
  * @public
  * @function mathMin
- * @param {number[]} The values to compare.
+ * @param {...number} The values to compare.
  * @returns {number} The smallest value.
  */
 export function mathMin([...values]) {

@@ -5,7 +5,7 @@ import { helper } from '@ember/component/helper';
  *
  * @public
  * @function mathDivide
- * @param {numbers[]} operands The numbers to divide.
+ * @param {...numbers} operands The numbers to divide.
  * @returns {number} The divided value.
  */
 export function mathDivide([...operands]) {
