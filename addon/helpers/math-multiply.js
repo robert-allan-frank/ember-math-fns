@@ -5,7 +5,7 @@ import { helper } from '@ember/component/helper';
  *
  * @public
  * @function mathMultiply
- * @param {numbers[]} operands The numbers to multiply.
+ * @param {...numbers} operands The numbers to multiply.
  * @returns {number} The multipied value.
  */
 export function mathMultiply([...operands]) {
