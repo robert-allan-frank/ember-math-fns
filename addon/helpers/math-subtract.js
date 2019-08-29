@@ -5,7 +5,7 @@ import { helper } from '@ember/component/helper';
  *
  * @public
  * @function mathSubtract
- * @param {numbers[]} operands The numbers to subtract.
+ * @param {...numbers} operands The numbers to subtract.
  * @returns {number} The subtracted value.
  */
 export function mathSubtract([...operands]) {
