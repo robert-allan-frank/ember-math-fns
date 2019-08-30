@@ -5,7 +5,7 @@ import { helper } from '@ember/component/helper';
  *
  * @public
  * @function mathMax
- * @param {...number} The values to compare.
+ * @param {...number} values The values to compare.
  * @returns {number} The largest value.
  */
 export function mathMax([...values]) {
