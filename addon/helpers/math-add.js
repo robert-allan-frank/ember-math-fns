@@ -5,7 +5,7 @@ import { helper } from '@ember/component/helper';
  *
  * @public
  * @function mathAdd
- * @param {...numbers} operands The numbers to add.
+ * @param {...number} operands The numbers to add.
  * @returns {number} The added value.
  */
 export function mathAdd([...operands]) {

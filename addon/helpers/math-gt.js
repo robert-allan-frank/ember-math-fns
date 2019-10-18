@@ -5,7 +5,7 @@ import { helper } from '@ember/component/helper';
  *
  * @public
  * @function mathGt
- * @param {...numbers} operands The numbers to compare.
+ * @param {...number} operands The numbers to compare.
  * @return {boolean} True if all operands are equal.
  */
 export function mathGt([...operands]) {

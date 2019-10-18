@@ -1,17 +1,28 @@
-import { module, test } from 'qunit';
-import { setupRenderingTest } from 'ember-qunit';
 import { render } from '@ember/test-helpers';
+import { setupRenderingTest } from 'ember-qunit';
 import hbs from 'htmlbars-inline-precompile';
+import { module, test } from 'qunit';
 
 module('Integration | Helper | math-lt', function(hooks) {
   setupRenderingTest(hooks);
 
-  // Replace this with your real tests.
-  test('it renders', async function(assert) {
-    this.set('inputValue', '1234');
+  test('can compare two numbers', async function(assert) {
+    await render(hbs`{{math-lt 1 2}}`);
+    assert.equal(this.element.textContent.trim(), 'true');
+  });
 
-    await render(hbs`{{math-lt inputValue}}`);
+  test('can find not less than', async function(assert) {
+    await render(hbs`{{math-lt 2 1}}`);
+    assert.equal(this.element.textContent.trim(), 'false');
+  });
 
-    assert.equal(this.element.textContent.trim(), '1234');
+  test('can compare n numbers', async function(assert) {
+    await render(hbs`{{math-lt 1 2 3 4 5}}`);
+    assert.equal(this.element.textContent.trim(), 'true');
+  });
+
+  test('can find not less than for n numbers', async function(assert) {
+    await render(hbs`{{math-lt 2 3 4 5 1}}`);
+    assert.equal(this.element.textContent.trim(), 'false');
   });
 });
