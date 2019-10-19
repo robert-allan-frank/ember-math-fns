@@ -14,10 +14,16 @@ Usage
 * [`math-add`](#math-add)
 * [`math-ceil`](#math-ceil)
 * [`math-divide`](#math-divide)
+* [`math-eq`](#math-eq)
 * [`math-floor`](#math-floor)
+* [`math-gt`](#math-gt)
+* [`math-gte`](#math-gte)
+* [`math-lt`](#math-lt)
+* [`math-lte`](#math-lte)
 * [`math-max`](#math-max)
 * [`math-min`](#math-min)
 * [`math-multiply`](#math-multiply)
+* [`math-ne`](#math-ne)
 * [`math-pow`](#math-pow)
 * [`math-random`](#math-random)
 * [`math-round`](#math-round)
@@ -58,12 +64,57 @@ Divides two or more numbers from left to right.
 {{math-divide paycheck wives}}
 ```
 
+#### `math-eq`
+Determines if two or more numbers are equal.
+
+```hbs
+{{math-eq 20 5}}
+{{math-eq 100 10 5}}
+{{math-eq paycheck taxes}}
+```
+
 #### `math-floor`
 Rounds a numbe down to the nearest integer. See [Math.fllor()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/fllor) for details on the Math.fllor function.
 
 ```hbs
 {{math-floor 4.54}}
 {{math-floor tax}}
+```
+
+#### `math-gt`
+Determines if two or more numbers are greater than each other from left to right.
+
+```hbs
+{{math-gt 20 5}}
+{{math-gt 100 10 5}}
+{{math-gt paycheck taxes}}
+```
+
+#### `math-gte`
+Determines if two or more numbers are greater than or equal to each other from left to right.
+
+```hbs
+{{math-gte 20 5}}
+{{math-gte 10 10 5}}
+{{math-gte paycheck taxes}}
+```
+
+#### `math-lt`
+Determines if two or more numbers are less than each other from left to right.
+
+```hbs
+{{math-lt 5 20}}
+{{math-lt 5 10 100}}
+{{math-lt paycheck taxes}}
+```
+
+#### `math-lte`
+Determines if two or more numbers are less than or equal to each other from left to right.
+
+```hbs
+{{math-lte 5 20}}
+{{math-lte 5 10 10}}
+{{math-lte paycheck taxes}}
 ```
 
 #### `math-max`
@@ -91,6 +142,15 @@ Multiplies two or more numbers together.
 {{math-multiply 4 5}}
 {{math-multiply 11 10 2}}
 {{math-multiply children costOfCollege}}
+```
+
+#### `math-ne`
+Determines if two or more numbers are not equal.
+
+```hbs
+{{math-ne 20 5}}
+{{math-ne 100 10 5}}
+{{math-ne tip tax}}
 ```
 
 #### `math-pow`
