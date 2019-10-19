@@ -1,4 +1,5 @@
 ember-math-fns
+[![Build Status](https://travis-ci.com/robert-allan-frank/ember-math-fns.svg?branch=develop)](https://travis-ci.com/robert-allan-frank/ember-math-fns)
 ==============================================================================
 This addon provides math helpers for Ember templates and components.
 
