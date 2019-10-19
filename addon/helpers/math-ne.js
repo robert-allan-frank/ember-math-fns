@@ -15,10 +15,10 @@ export function mathNe([...operands]) {
   }
 
   // get first value
-  const first = operands[0];
+  const first = operands.shift();
 
   // compare first with each subsequent value for a non match
-  return operands.slice(1).some(value => value !== first);
+  return operands.some(value => value !== first);
 }
 
 export default helper(mathNe);

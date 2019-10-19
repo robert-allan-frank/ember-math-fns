@@ -15,10 +15,10 @@ export function mathEq([...operands]) {
   }
 
   // get first value
-  const first = operands[0];
+  const first = operands.shift();
 
   // compare first with each subsequent value for a match
-  return operands.slice(1).every(value => value === first);
+  return operands.every(value => value === first);
 }
 
 export default helper(mathEq);
