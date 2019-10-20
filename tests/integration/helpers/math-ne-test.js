@@ -25,4 +25,9 @@ module('Integration | Helper | math-ne', function(hooks) {
     await render(hbs`{{math-ne 1 1 1 1 1}}`);
     assert.equal(this.element.textContent.trim(), 'false');
   });
+
+  test('ensures at least two values are present', async function(assert) {
+    await render(hbs`{{math-ne 1}}`);
+    assert.equal(this.element.textContent.trim(), 'false');
+  });
 });
