@@ -15,4 +15,9 @@ module('Integration | Helper | math-divide', function(hooks) {
     await render(hbs`{{math-divide 15 5 3}}`);
     assert.equal(this.element.textContent.trim(), '1');
   });
+
+  test('can ensure at least one number is present', async function(assert) {
+    await render(hbs`{{math-divide}}`);
+    assert.equal(this.element.textContent.trim(), '0');
+  });
 });

@@ -25,4 +25,9 @@ module('Integration | Helper | math-gt', function(hooks) {
     await render(hbs`{{math-gt 4 3 2 1 5}}`);
     assert.equal(this.element.textContent.trim(), 'false');
   });
+
+  test('ensures at least two values are present', async function(assert) {
+    await render(hbs`{{math-gt 1}}`);
+    assert.equal(this.element.textContent.trim(), 'false');
+  });
 });

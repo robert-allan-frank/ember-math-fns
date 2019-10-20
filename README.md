@@ -1,4 +1,7 @@
 ember-math-fns
+[![npm version](https://badge.fury.io/js/ember-math-fns.svg)](https://badge.fury.io/js/ember-math-fns)
+[![Build Status](https://travis-ci.com/robert-allan-frank/ember-math-fns.svg?branch=develop)](https://travis-ci.com/robert-allan-frank/ember-math-fns)
+[![codecov](https://codecov.io/gh/robert-allan-frank/ember-math-fns/branch/develop/graph/badge.svg)](https://codecov.io/gh/robert-allan-frank/ember-math-fns)
 ==============================================================================
 This addon provides math helpers for Ember templates and components.
 
