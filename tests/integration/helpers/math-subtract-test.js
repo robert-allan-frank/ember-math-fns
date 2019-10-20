@@ -15,4 +15,9 @@ module('Integration | Helper | math-subtract', function(hooks) {
     await render(hbs`{{math-subtract 15 5 4 3 2 1}}`);
     assert.equal(this.element.textContent.trim(), '0');
   });
+
+  test('can ensure at least one number is present', async function(assert) {
+    await render(hbs`{{math-subtract}}`);
+    assert.equal(this.element.textContent.trim(), '0');
+  });
 });
