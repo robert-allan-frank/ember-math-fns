@@ -196,6 +196,13 @@ Subtract two or more numbers from left to right.
 {{math-subtract paycheck rent}}
 ```
 
+Related Addons
+------------------------------------------------------------------------------
+* See [ember-array-fns](https://github.com/robert-allan-frank/ember-array-fns) for array based helpers.
+* See [ember-intl-fns](https://github.com/robert-allan-frank/ember-intl-fns) for internationalization based helpers.
+* See [ember-number-fns](https://github.com/robert-allan-frank/ember-number-fns) for number based helpers.
+* See [ember-string-fns](https://github.com/robert-allan-frank/ember-string-fns) for string based helpers.
+
 Compatibility
 ------------------------------------------------------------------------------
 * Ember.js v3.4 or above
