@@ -199,6 +199,7 @@ Subtract two or more numbers from left to right.
 Related Addons
 ------------------------------------------------------------------------------
 * See [ember-array-fns](https://github.com/robert-allan-frank/ember-array-fns) for array based helpers.
+* See [ember-datetime-fns](https://github.com/robert-allan-frank/ember-datetime-fns) for date and time based helpers.
 * See [ember-intl-fns](https://github.com/robert-allan-frank/ember-intl-fns) for internationalization based helpers.
 * See [ember-number-fns](https://github.com/robert-allan-frank/ember-number-fns) for number based helpers.
 * See [ember-string-fns](https://github.com/robert-allan-frank/ember-string-fns) for string based helpers.
