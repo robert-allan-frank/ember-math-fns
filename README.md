@@ -138,6 +138,14 @@ Determines the smallest of two or more numbers. See [Math.min()](https://develop
 {{math-min numberOfJiras timeInDay}}
 ```
 
+#### `math-mod`
+Perform the modulus of a value and its divisor to get the remainder.
+
+```hbs
+{{math-mod 12 3}}
+{{math-mod value divisor}}
+```
+
 #### `math-multiply`
 Multiplies two or more numbers together.
 
