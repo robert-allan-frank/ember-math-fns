@@ -138,6 +138,14 @@ Determines the smallest of two or more numbers. See [Math.min()](https://develop
 {{math-min numberOfJiras timeInDay}}
 ```
 
+#### `math-mod`
+Perform the modulus of a value and its divisor to get the remainder.
+
+```hbs
+{{math-mod 12 3}}
+{{math-mod value divisor}}
+```
+
 #### `math-multiply`
 Multiplies two or more numbers together.
 
@@ -195,6 +203,14 @@ Subtract two or more numbers from left to right.
 {{math-subtract 100 10 9}}
 {{math-subtract paycheck rent}}
 ```
+
+Related Addons
+------------------------------------------------------------------------------
+* See [ember-array-fns](https://github.com/robert-allan-frank/ember-array-fns) for array based helpers.
+* See [ember-datetime-fns](https://github.com/robert-allan-frank/ember-datetime-fns) for date and time based helpers.
+* See [ember-intl-fns](https://github.com/robert-allan-frank/ember-intl-fns) for internationalization based helpers.
+* See [ember-number-fns](https://github.com/robert-allan-frank/ember-number-fns) for number based helpers.
+* See [ember-string-fns](https://github.com/robert-allan-frank/ember-string-fns) for string based helpers.
 
 Compatibility
 ------------------------------------------------------------------------------
