@@ -6,7 +6,7 @@ import { helper } from '@ember/component/helper';
  * @public
  * @function mathNe
  * @param {...number} operands The numbers to compare.
- * @return {boolean} True if all operands are equal.
+ * @return {boolean} True if at least one operands is not equal.
  */
 export function mathNe([...operands]) {
   // range check at least 2 operands
