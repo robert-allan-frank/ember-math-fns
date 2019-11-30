@@ -16,17 +16,20 @@ Usage
 * [`math-abs`](#math-abs)
 * [`math-add`](#math-add)
 * [`math-ceil`](#math-ceil)
+* [`math-decrement`](#math-decrement)
 * [`math-divide`](#math-divide)
 * [`math-eq`](#math-eq)
 * [`math-floor`](#math-floor)
 * [`math-gt`](#math-gt)
 * [`math-gte`](#math-gte)
+* [`math-increment`](#math-increment)
 * [`math-lt`](#math-lt)
 * [`math-lte`](#math-lte)
 * [`math-max`](#math-max)
 * [`math-min`](#math-min)
 * [`math-multiply`](#math-multiply)
 * [`math-ne`](#math-ne)
+* [`math-negate`](#math-negate)
 * [`math-pow`](#math-pow)
 * [`math-random`](#math-random)
 * [`math-round`](#math-round)
@@ -56,6 +59,14 @@ Rounds a number up to the nearest integer. See [Math.ceil()](https://developer.m
 ```hbs
 {{math-ceil 3.24}}
 {{math-ceil giving}}
+```
+
+#### `math-decrement`
+Decrement a value by 1.
+
+```hbs
+{{math-decrement 10}}
+{{math-decrement counter}}
 ```
 
 #### `math-divide`
@@ -100,6 +111,14 @@ Determines if two or more numbers are greater than or equal to each other from l
 {{math-gte 20 5}}
 {{math-gte 10 10 5}}
 {{math-gte paycheck taxes}}
+```
+
+#### `math-increment`
+Increment a value by 1.
+
+```hbs
+{{math-increment 0}}
+{{math-increment counter}}
 ```
 
 #### `math-lt`
@@ -162,6 +181,14 @@ Determines if two or more numbers are not equal.
 {{math-ne 20 5}}
 {{math-ne 100 10 5}}
 {{math-ne tip tax}}
+```
+
+#### `math-negate`
+Negate/invert the sign for a number.
+
+```hbs
+{{math-negate 2}}
+{{math-negate value}}
 ```
 
 #### `math-pow`
