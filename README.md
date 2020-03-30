@@ -27,6 +27,7 @@ Usage
 * [`math-lte`](#math-lte)
 * [`math-max`](#math-max)
 * [`math-min`](#math-min)
+* [`math-mod`](#math-mod)
 * [`math-multiply`](#math-multiply)
 * [`math-ne`](#math-ne)
 * [`math-negate`](#math-negate)
